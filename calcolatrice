@@ -3,9 +3,9 @@
   <head>
     <title>My Calculator</title>
 
-    <link rel="stylesheet" href=" myproject/bootstrap.min.css " />
-    <link rel="stylesheet" href=" myproject/bootstrap-responsive.min.css " />
-    <link rel="stylesheet" href=" myproject/application.css " />
+    <link rel="stylesheet" href=" ./myproject/bootstrap.min.css " />
+    <link rel="stylesheet" href=" ./myproject/bootstrap-responsive.min.css " />
+    <link rel="stylesheet" href=" ./myproject/application.css " />
 
     <script src="./assets/javascripts/jquery-1.9.1.js"></script>
     <script src="./assets/javascripts/calculator.js"></script>
