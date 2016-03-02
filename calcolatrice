@@ -3,9 +3,9 @@
   <head>
     <title>My Calculator</title>
 
-    <link rel="stylesheet" href="/home/andrea/Scaricati/bootstrap-3.3.6-dist/myproject/bootstrap.min.css" />
-    <link rel="stylesheet" href="/home/andrea/Scaricati/bootstrap-3.3.6-dist/myproject/bootstrap-responsive.min.css" />
-    <link rel="stylesheet" href="/home/andrea/Scaricati/bootstrap-3.3.6-dist/myproject/application.css" />
+    <link rel="stylesheet" href=" myproject/bootstrap.min.css " />
+    <link rel="stylesheet" href=" myproject/bootstrap-responsive.min.css " />
+    <link rel="stylesheet" href=" myproject/application.css " />
 
   <script type="text/javascript">
      function displaynum(n1)
