@@ -3,83 +3,59 @@
   <head>
     <title>My Calculator</title>
 
-    <link rel="stylesheet" href="/home/andrea/Scaricati/bootstrap-3.3.6-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/home/andrea/Scaricati/bootstrap-3.3.6-dist/css/bootstrap-responsive.min.css" />
-    <link rel="stylesheet" href="/home/andrea/Scaricati/bootstrap-3.3.6-dist/css/application.css" />
+    <link rel="stylesheet" href="/home/andrea/Scaricati/bootstrap-3.3.6-dist/myproject/bootstrap.min.css" />
+    <link rel="stylesheet" href="/home/andrea/Scaricati/bootstrap-3.3.6-dist/myproject/bootstrap-responsive.min.css" />
+    <link rel="stylesheet" href="/home/andrea/Scaricati/bootstrap-3.3.6-dist/myproject/application.css" />
 
-    <script src="/home/andrea/Scaricati/bootstrap-3.3.6-dist/js/jquery.js"></script>
-    <script src="/home/andrea/Scaricati/bootstrap-3.3.6-dist/js/main.js"></script>
+  <script type="text/javascript">
+     function displaynum(n1)
+	{
+		calc.txt.value=calc.txt.value+n1;
+	}
+     function canc()
+	{
+		calc.txt.value="";
+	}
+  </script>     
+
   </head>
   <body>
-
-
+  
+  <form name=calc> 
+  <input type=text name=txt id="calculator-screen"><br>
+	
+  <div id="calculator-keyboard">
     <div class="container">
-
-      <div class="hero-unit" id="calculator-wrapper">
-        <div class="row-fluid">
-          <div class="span8">
-            <div id="calculator-screen" class="uneditable-input"></div>
-          </div>
-          <div class="span1" style="text-align: center;">
-            <div class="visible-phone">
-              =
-            </div>
-            <div class="hidden-phone">
-              =
-            </div>
-          </div>
-          <div class="span3">
-            <div id="calculator-result"  class="uneditable-input">0</div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="row-fluid">
-
-        <div class="span6 well">
-          <div id="calc-board">
-            <div class="row-fluid">
-              <a href="#" class="btn btn-danger" data-method="reset" data-key="8">C</a>
-	      <a href="#" class="btn btn-default" data-constant="DIV" data-key="47">/</a>
-              <a href="#" class="btn btn-default" data-constant="MULT" data-key="42">*</a>
-            </div>
-            <div class="row-fluid">
-              <a href="#" class="btn" data-key="55">7</a>
-              <a href="#" class="btn" data-key="56">8</a>
-              <a href="#" class="btn" data-key="57">9</a>
-	      <a href="#" class="btn btn-default" data-constant="MIN" data-key="45">-</a>
-            </div>
-            <div class="row-fluid">
-              <a href="#" class="btn" data-key="52">4</a>
-              <a href="#" class="btn" data-key="53">5</a>
-              <a href="#" class="btn" data-key="54">6</a>
-              <a href="#" class="btn btn-default" data-constant="SUM" data-key="43">+</a>
-            </div>
-            <div class="row-fluid">
-              <a href="#" class="btn" data-key="49">1</a>
-              <a href="#" class="btn" data-key="50">2</a>
-              <a href="#" class="btn" data-key="51">3</a>
-              <a href="#" class="btn btn-primary" data-method="calculate" data-key="61">=</a>
-            </div>
-            <div class="row-fluid">
-              <a href="#" class="btn" data-key="48">0</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="span6 well">
-          <legend>History</legend>
-          <div id="calc-panel">
-            <div id="calc-history">
-              <ol id="calc-history-list"></ol>
-            </div>
-          </div>
-        </div>
-        <hr>
-
-      </div>
+	<div class="row">
+	   <button type="button" class="btn btn-danger" onclick="canc()">C</button>
+	   <button type="button" class="btn btn-default" name=btndiv value=/ onclick="displaynum(btndiv.value)">/</button>
+	   <button type="button" class="btn btn-default" name=btnmul value=* onclick="displaynum(btnmul.value)">*</button>
+	</div>
+	<div class="row">
+	   <button type="button" class="btn" name=btn7 value=7 onclick="displaynum(btn7.value)">7</button>
+	   <button type="button" class="btn" name=btn8 value=8 onclick="displaynum(btn8.value)">8</button>
+	   <button type="button" class="btn" name=btn9 value=9 onclick="displaynum(btn9.value)">9</button>
+	   <button type="button" class="btn btn-default" name=btndif value=- onclick="displaynum(btndif.value)">-</button>
+	</div>
+	<div class="row">
+	   <button type="button" class="btn" name=btn4 value=4 onclick="displaynum(btn4.value)">4</button>
+	   <button type="button" class="btn"name=btn5 value=5 onclick="displaynum(btn5.value)">5</button>
+	   <button type="button" class="btn" name=btn6 value=6 onclick="displaynum(btn6.value)">6</button>
+	   <button type="button" class="btn btn-default" name=btnplus value=+ onclick="displaynum(btnplus.value)">+</button>
+	</div>
+	<div class="row">
+	   <button type="button" class="btn" name=btn1 value=1 onclick="displaynum(btn1.value)">1</button>
+	   <button type="button" class="btn" name=btn2 value=2 onclick="displaynum(btn2.value)">2</button>
+	   <button type="button" class="btn" name=btn3 value=3 onclick="displaynum(btn3.value)">3</button>
+	   <button type="button" class="btn btn-primary" name=btnequal value== onclick="txt.value=eval(txt.value)">=</button>
+	</div>	
+	<div class="row">
+	   <button type="button" class="btn" name=btn0 value=0 onclick="displaynum(btn0.value)">0</button>
+	</div>
     </div>
+  </div>
+
+  </form>
 
   </body>
 </html>
